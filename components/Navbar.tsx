@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { NAV_LINKS } from "@/constants";
 
 const Navbar = () => {
   return (
@@ -9,7 +10,17 @@ const Navbar = () => {
         <Image src="/sprout.svg" alt="logo" width={200} height={100} />
       </Link>
 
-      <ul className="hidden h-full gap-12 lg:flex"></ul>
+      <ul className="hidden h-full gap-12 lg:flex">
+        {NAV_LINKS.map((link) => (
+          <Link
+            href={link.href}
+            key={link.key}
+            className="regular-16 text-gray-50 flexCenter"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </ul>
     </nav>
   );
 };
