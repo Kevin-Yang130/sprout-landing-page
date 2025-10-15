@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { NAV_LINKS } from "@/constants";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="regular-16 text-gray-50 flexCenter"
+            className="text-[16px] hover:font-bold transition-all"
           >
             {link.label}
           </Link>
