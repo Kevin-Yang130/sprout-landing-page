@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
         <Image src="/sprout.svg" alt="logo" width={200} height={100} />
       </Link>
@@ -22,6 +22,14 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
+
+      <Image
+        src="menu.svg"
+        alt="menu"
+        width={32}
+        height={32}
+        className="inline-block cursor-pointer lg:hidden"
+      />
     </nav>
   );
 };

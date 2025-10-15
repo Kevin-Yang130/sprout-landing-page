@@ -1,3 +1,13 @@
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import GetApp from "@/components/GetApp";
+
 export default function Home() {
-  return <h1 className="font-bold text-2xl text-teal-500">Hello</h1>;
+  return (
+    <>
+      <Hero />
+      <Features />
+      <GetApp />
+    </>
+  );
 }
