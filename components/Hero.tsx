@@ -25,13 +25,13 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* RIGHT: image next to the headline on large screens */}
-      <div className="relative z-10 flex-1 xl:w-1/2 w-full h-[260px] md:h-[360px] lg:h-[550px] rounded-5xl overflow-hidden  xl:-translate-x-25">
+      {/* RIGHT*/}
+      <div className="relative z-10 flex-1 xl:w-1/2 w-full h-[260px] md:h-[360px] lg:h-[700px] rounded-5xl overflow-hidden  xl:-translate-x-25 ">
         <Image
-          src="/t5.png"
+          src="/t6.png"
           alt="Sprout app preview"
           fill
-          className="object-cover object-center scale-110 md:scale-102" // <- zoom
+          className="object-cover object-center"
           priority
         />
       </div>
