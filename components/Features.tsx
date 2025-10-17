@@ -5,14 +5,14 @@ import React from "react";
 const Features = () => {
   return (
     <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
-      <div className="max-container padding-container relative w-full flex justify-end">
-        <div className="flex flex-1 lg:min-h-[900px]">
+      <div className="max-container padding-container relative w-full flex justify-between items-center">
+        <div className="flex flex-1 lg:min-h-[900px] -ml-80">
           <Image
             src="/monthly2.png"
             alt="phone"
             width={680}
-            height={1600}
-            className="feature-phone"
+            height={1500}
+            className="feature-phone md:-translate-x-20 xl:-translate-x-40"
           />
         </div>
 
