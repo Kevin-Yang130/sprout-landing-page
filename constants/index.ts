@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Home' },
-  { href: '/', key: 'how_sprout', label: 'How Sprout Works?' },
-  { href: '/', key: 'services', label: 'Services' },
-  { href: '/', key: 'pricing ', label: 'Pricing ' },
-  { href: '/', key: 'contact_us', label: 'Contact Us' },
+  { href: '/#guide', key: 'how_sprout', label: 'How Sprout Works' },
+  { href: '/#features', key: 'features', label: 'features' },
+  { href: '/#get_app', key: 'Download', label: 'Download' },
+  { href: '/#footer', key: 'contact_us', label: 'Contact Us' },
 ];
 
 // CAMP SECTION
@@ -19,28 +19,28 @@ export const PEOPLE_URL = [
 export const FEATURES = [
   {
     title: 'Add Expense/Income in Seconds',
-    icon: '/map.svg',
+    icon: '/clock.svg',
     variant: 'green',
     description:
-      'Tap “Add Transaction", enter an amount (or snap a receipt), choose a category, and you’re done. Saved in under 5 seconds.',
+      'Tap “Add Transaction", enter an amount, choose a category, and you’re done. Saved in under 5 seconds.',
   },
   {
     title: 'Monthly Tracking, at a Glance',
-    icon: '/calendar.svg',
+    icon: '/up.svg',
     variant: 'green',
     description:
       "See totals the income, expenses, and net of each month and how this month compares to last, all in one clean view.",
   },
   {
     title: 'Visualize Your Spending',
-    icon: '/tech.svg',
-    variant: 'green',
+    icon: '/graph2.svg',
+    variant: 'graph',
     description:
       'Beautiful charts break down where your money goes by category, merchant, and time so patterns pop instantly.',
   },
   {
     title: 'Smart Budgets & Gentle Nudges',
-    icon: '/location.svg',
+    icon: '/green.svg',
     variant: 'orange',
     description:
       'Set monthly limits and goals; get helpful reminders and progress updates to keep you on track without the stress.',
@@ -50,27 +50,25 @@ export const FEATURES = [
 // FOOTER SECTION
 export const FOOTER_LINKS = [
   {
-    title: 'Learn More',
+    title: "Learn More",
     links: [
-      'About Hilink',
-      'Press Releases',
-      'Environment',
-      'Jobs',
-      'Privacy Policy',
-      'Contact Us',
+      { label: "About Sprout", href: "/#hero" },
+      { label: "Contact Us", href: "/#footer" },
     ],
   },
   {
-    title: 'Our Community',
-    links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+    title: "Other Projects",
+    links: [
+      { label: "Portfolio", href: "https://kevinyangli.com/" },
+      { label: "Github", href: "https://github.com/Kevin-Yang130" },
+    ],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Admin Officer', value: '123-456-7890' },
-    { label: 'Email Officer', value: 'hilink@akinthil.com' },
+    { label: 'Email', value: 'sprout@gmail.com' },
   ],
 };
 
@@ -81,6 +79,5 @@ export const SOCIALS = {
     '/instagram.svg',
     '/twitter.svg',
     '/youtube.svg',
-    '/wordpress.svg',
   ],
 };

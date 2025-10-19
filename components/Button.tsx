@@ -1,27 +1,41 @@
-import React from "react";
+"use client";
+import Link from "next/link";
 import Image from "next/image";
 
 type ButtonProps = {
-  type: "button" | "submit";
+  type?: "button" | "submit";
   title: string;
   icon?: string;
   variant: string;
   full?: boolean;
+  href?: string;
 };
 
-const Button = ({ type, title, icon, variant }: ButtonProps) => {
+export default function Button({
+  type = "button",
+  title,
+  icon,
+  variant,
+  full,
+  href,
+}: ButtonProps) {
+  const classes = `flexCenter gap-3 rounded-full border ${variant} ${
+    full ? "w-full" : ""
+  }`;
+
+  if (href) {
+    return (
+      <Link href={href} className={classes}>
+        {icon && <Image src={icon} alt="" width={24} height={24} />}
+        <span className="bold-16 whitespace-nowrap">{title}</span>
+      </Link>
+    );
+  }
+
   return (
-    <button
-      type={type}
-      className={`flexCenter gap-3 rounded-full border ${variant} {full && 'w-full}`}
-    >
-      {icon && <Image src={icon} alt={title} width={24} height={24} />}
-      <label className="bold-16 whitespace-nowrap cursor-pointer">
-        {" "}
-        {title}{" "}
-      </label>
+    <button type={type} className={classes}>
+      {icon && <Image src={icon} alt="" width={24} height={24} />}
+      <span className="bold-16 whitespace-nowrap">{title}</span>
     </button>
   );
-};
-
-export default Button;
+}
