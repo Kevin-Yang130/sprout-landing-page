@@ -2,7 +2,7 @@
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Home' },
   { href: '/#guide', key: 'how_sprout', label: 'How Sprout Works' },
-  { href: '/#features', key: 'features', label: 'features' },
+  { href: '/#features', key: 'Features', label: 'Features' },
   { href: '/#get_app', key: 'Download', label: 'Download' },
   { href: '/#footer', key: 'contact_us', label: 'Contact Us' },
 ];
@@ -18,14 +18,14 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Add Expense/Income in Seconds',
+    title: 'Add Transactions in Seconds',
     icon: '/clock.svg',
     variant: 'green',
     description:
       'Tap “Add Transaction", enter an amount, choose a category, and you’re done. Saved in under 5 seconds.',
   },
   {
-    title: 'Monthly Tracking, at a Glance',
+    title: 'Monthly Tracking',
     icon: '/up.svg',
     variant: 'green',
     description:

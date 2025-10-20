@@ -6,7 +6,7 @@ const Guide = () => {
   return (
     <section id="guide" className="flexCenter flex-col gap-10">
       <div className=" max-container padding-container w-full pb-24">
-        <Image src="/owl.svg" alt="camp" width={50} height={50} />
+        <Image src="/root.svg" alt="camp" width={50} height={50} />
         <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">
           We are here for you
         </p>
